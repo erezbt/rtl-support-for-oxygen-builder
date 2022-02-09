@@ -1,0 +1,222 @@
+
+/* ----------------------------------
+	Contact Us Section Styles
+ ------------------------------------ */
+ .contact-form {
+	padding: 40px;
+	background-color: #fff;
+	padding-top: 35px;
+
+	@media (max-width: 585px) {
+		padding-top: 20px;           
+	}
+
+	.single-personal-info {
+		margin-bottom: 25px;
+	}
+
+	h3, h2, h1 {
+		margin-bottom: 30px;
+	}
+
+	input, textarea {
+		width: 100%;
+		background: #F8F9FC;                        
+		line-height: 1;
+		padding: 25px 30px;
+		border: 0px;
+		
+		@media (max-width: 585px) {
+            padding: 15px;
+			font-size: 13px;            
+        }
+		
+	}
+	textarea {
+		height: 220px;
+
+		@media (max-width: 767px) {
+            height: 160px;
+        }
+	}
+
+	label {
+		color: #202426;
+		font-weight: 700;
+		font-size: 14px;
+		margin-bottom: 10px;
+		text-transform: capitalize;
+
+		span {
+			color: #727475;
+			margin-left: 5px;
+		}
+	}
+
+	input[type='submit'], .submit-btn {
+		background: $second-color;
+		color: #fff;
+		font-weight: 700;
+		line-height: 1;
+		padding: 25px;
+		transition: all .3s ease-in-out;
+		width: 230px;
+		text-transform: uppercase;
+		font-family: $heading-font;
+		font-size: 14px;
+
+		&.active, &:hover {
+			background-color: $theme-color;                            
+		}
+
+		i {
+			margin-right: 8px;
+		}
+
+		@media (max-width: 585px) {
+			padding: 15px 35px;
+			font-size: 14px;
+			font-weight: 600;
+			width: auto;        
+		}
+
+		@media (max-width: 400px) {
+			width: 100%;
+		}
+
+	}
+}
+
+.contact-us-wrapper {
+	background-color: #F9FAFE;
+}
+
+.contact-us-sidebar {
+	background-color: #fff;
+	padding: 40px;
+	padding-top: 30px;
+
+	@media (min-width: 991px) and (max-width: 1115px) {
+		display: block;
+		text-align: center;
+	}
+
+	.contact-info { 
+		position: relative;
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+
+		@media (min-width: 991px) and (max-width: 1115px) {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+		}
+
+		&::after {
+			background: #EBEDF2;
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1px;
+
+		}
+	}
+
+	h2 { 
+
+	}
+
+	.live-chat {
+
+		a {
+			text-decoration: underline;
+			color: $second-color;
+			text-transform: uppercase;
+			margin-top: 10px;
+			display: block;
+
+			@media (min-width: 991px) and (max-width: 1115px) {
+				margin-top: 0;
+			}
+
+			i {
+				font-size: 22px;
+				margin-right: 10px;
+				display: inline-block;
+				margin-top: 10px;
+			}
+		}
+
+		p {
+
+		}
+	}
+}
+
+.single-info { 
+	overflow: hidden;
+	clear: both;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 30px;
+
+
+
+	@media (min-width: 991px) and (max-width: 1115px) {
+		display: block;
+		text-align: center;
+		margin-top: 20px;
+	}
+
+	.icon { 
+		float: left;
+		overflow: hidden;
+		font-size: 42px;
+		line-height: 1;
+		color: $second-color;
+		margin-right: 20px;
+
+		@media (max-width: 1191px) {
+			font-size: 36px;
+		}
+
+		
+
+		@media (min-width: 991px) and (max-width: 1115px) {
+			float: inherit;
+			display: block;
+		}
+
+		
+	}
+
+	.text { 
+		overflow: hidden;
+
+		span { 
+			display: block;
+		}
+
+		h5 { 
+			margin-bottom: 0;
+
+			@media (max-width: 1191px) {
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+
+
+.contact-map-wrap {
+	iframe {
+		height: 450px;
+
+		@media (max-width: 991px) {
+			height: 300px;
+		}
+	}
+}

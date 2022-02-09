@@ -1,0 +1,175 @@
+.single-pricing-table {
+    padding: 30px;
+    border: 1px solid #EEF0F4;
+    margin-top: 40px;
+
+	.package-head {
+        background: #fff5f1;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 18px 20px;
+        border-radius: 6px;
+
+        &.head2 {
+            background-color: #F1F6FB;
+        }
+
+        &.head3 {
+            background: #FFFAF2;
+        }
+
+        &.head4 {
+            background: #FFF8FB;
+        }
+
+		.icon { 
+            margin-right: 20px;
+            float: left;
+            overflow: hidden;
+		}
+
+		.package-title { 
+            overflow: hidden;
+
+			h6 { 
+                color: $theme-color;
+                margin-bottom: 0;
+                line-height: 1;
+                font-size: 14px;
+			}
+
+			h2 { 
+                margin-top: 3px;
+                margin-bottom: 0;
+                color: $second-color;
+			}
+		}
+	}
+
+	.package-features { 
+        padding: 30px 0px;
+        text-align: center;
+
+		span { 
+            font-size: 17px;
+            line-height: 40px;
+            display: block;
+		}
+	}
+
+	.package-btn { 
+        text-align: center;
+
+		a { 
+            padding: 15px;
+            display: block;
+            font-size: 15px;
+            text-transform: uppercase;
+            border: 1px solid #EBEDF2;
+
+            &:hover {
+                color: $white;
+                border-color: $second-color;
+                background-color: $second-color;
+            }
+		}
+	}
+}
+
+.pricing-bg {
+    background-color: #F8F8F8;
+
+    .single-pricing-plan {
+        background-color: #fff;
+        border-color: #fff;
+    }
+}
+
+.single-pricing-plan {
+    padding: 40px;
+    border: 1px solid #EEF0F4;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    transition: all .3s ease-in-out;
+
+    &.active {
+        &::before {
+            position: absolute;
+            left: 0;
+            top: -1px;
+            content: "Popular";
+            text-transform: capitalize;
+            line-height: 1;
+            padding: 10px 30px;
+            background-color: $second-color;
+            color: #fff;
+            display: inline-block;
+        }
+    }
+
+    &.active, &:hover { 
+        background-color: #fff;
+        border-color: #fff;
+        box-shadow: 0px 20px 60px rgba(13, 22, 55, 0.1);
+
+        a {
+            color: $white;
+            border-color: $second-color;
+            background-color: $second-color;
+        }
+    }
+
+	.package-head {
+
+		.icon { 
+            display: block;
+            margin-bottom: 20px;
+		}
+
+		.package-title { 
+            overflow: hidden;
+
+			h6 { 
+                color: $theme-color;
+                margin-bottom: 0;
+                font-size: 18px;
+			}
+
+			h2 { 
+                margin-top: 3px;
+                margin-bottom: 0;
+                color: $second-color;
+			}
+		}
+	}
+
+	.package-features { 
+        padding: 30px 0px;
+
+		span { 
+            font-size: 17px;
+            line-height: 40px;
+            display: block;
+		}
+	}
+
+	.package-btn {
+
+		a { 
+            padding: 15px;
+            display: block;
+            font-size: 15px;
+            text-transform: uppercase;
+            border: 1px solid #EBEDF2;
+
+            &:hover {
+                color: $white;
+                border-color: $second-color;
+                background-color: $second-color;
+            }
+		}
+	}
+}

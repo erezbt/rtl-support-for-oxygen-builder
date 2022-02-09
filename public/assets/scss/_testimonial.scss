@@ -1,0 +1,135 @@
+.single-testimonial-item { 
+    background-color: #F9F9F9;
+    position: relative;
+    padding: 95px;
+    padding-top: 130px;
+    padding-bottom: 0;
+    text-align: center;
+    margin-top: 70px;
+
+    @media (max-width: 991px) {
+        padding: 75px;
+        padding-top: 100px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 50px;
+        padding-top: 80px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 25px;
+        padding-top: 70px;
+    }
+
+    &::before {
+        width: 87px;
+        height: 87px;
+        background: $second-color;
+        position: absolute;
+        left: 50%;
+        top: -40px;
+        transform: translateX(-50%);
+        content: "\f10e";
+        font-family: $fa;
+        font-weight: 700;
+        color: #fff;
+        line-height: 87px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+	p { 
+        font-size: 22px;
+        font-style: italic;
+        line-height: 150%;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: 1.9;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 17px;
+        }
+	}
+
+	.client-info { 
+        margin-top: 50px;
+
+        @media (max-width: 767px) {
+            margin-top: 20px;
+        }
+
+		h5 { 
+            line-height: 1;
+            margin-bottom: 10px;
+		}
+
+		span {
+            line-height: 1;
+		}
+	}
+
+	.client-img { 
+        width: 86px;
+        height: 86px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background-color: #eee;
+        margin-bottom: -43px;
+        position: relative;
+        bottom: -43px;
+	}
+}
+
+.testimonial-carousel-active {
+    .owl-item {
+        padding-bottom: 90px;
+
+        @media (max-width: 991px) {
+            padding-bottom: 15px;
+        }
+
+        @media (max-width: 767px) {
+            padding-bottom: 36px;
+        }
+
+        @media (max-width: 500px) {
+            padding-bottom: 60px;
+        }
+    
+    }
+
+    .owl-nav {
+        div {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            display: inline-block;
+            padding: 30px 15px;
+            background: $second-color;
+            transform: translate(-50%);
+            font-size: 20px;
+            color: #fff;
+
+            @media (max-width: 1200px) {
+                transform: translateY(0);
+            }
+
+            @media (max-width: 500px) {
+                display: none;
+            }
+
+            &.owl-next {
+                right: 0;
+                transform: translateX(50%);
+                left: auto;
+
+                @media (max-width: 1200px) {
+                    transform: translateX(0);
+                }
+            }
+        }
+    }
+}

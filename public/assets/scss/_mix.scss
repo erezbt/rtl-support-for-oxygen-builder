@@ -1,0 +1,61 @@
+
+.coverbg {
+    @include coverbg;
+}
+
+.mx-auto {
+	margin: 0 auto;
+}
+
+.align-center {
+	@include align-center;
+
+	&:before, &:after {
+    	content: none;
+    }
+}
+
+.align-center-h {
+	@include align-center('horizontal');
+
+	&:before, &:after {
+    	content: none;
+    }
+}
+
+.align-center-v {
+	height: 100%;
+	@include align-center('vertical');
+
+	&:before, &:after {
+    	content: none;
+    }
+}
+
+.align-center-v-b {
+	height: 100%;
+	@include align-center('bottom');
+
+	&:before, &:after {
+    	content: none;
+    }
+}
+
+.justify-content-center {
+	justify-content: center!important;
+    display: flex;
+    flex-wrap: wrap;
+
+    &:before, &:after {
+    	content: none;
+    }
+}
+
+.eq-height {
+	display: flex;
+	flex-wrap: wrap;
+
+	&:before, &:after {
+    	content: none;
+    }
+}

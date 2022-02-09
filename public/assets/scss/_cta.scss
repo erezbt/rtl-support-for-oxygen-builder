@@ -1,0 +1,134 @@
+/* ----------------------------------
+	Call To Action Section Styles
+ ------------------------------------ */
+ .cta-wrapper {
+	 padding: 50px 0px 35px;
+
+	 &.style-2 {
+		 margin-left: 0;
+	 }
+
+	.cta-text { 
+
+		i {
+			font-size: 100px;
+			line-height: 1;
+			color: #fff;
+			margin-right: 25px;
+
+			@media (max-width: 991px) {
+				font-size: 80px;
+			}
+
+			@media (max-width: 767px) {
+				font-size: 60px;
+			}
+		}
+
+		h2 {
+			font-size: 30px;
+			color: #fff;
+
+			@media (max-width: 991px) {
+				font-size: 26px;
+			}
+		}
+	}
+
+	.theme-btn { 
+		border: 1px solid #fff;
+		box-sizing: border-box;
+
+		&:hover {
+			border-color: $theme-color;
+		}
+	}
+}
+
+.pricing-cta-wrapper {
+	position: relative;
+	z-index: 1;
+
+	&::before {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		content: "";
+		height: 100%;
+		background: $theme-color;
+		opacity: .6;
+		z-index: -1;
+	}
+
+	.pricing-contents { 
+		
+		h1 { 
+			display: block;
+			margin-top: -15px;
+		}
+	
+		a { 
+			line-height: 1px;
+			padding: 28px 45px;
+			display: inline-block;
+			border: 2px solid #fff;
+			text-transform: uppercase;
+			overflow: hidden;
+			margin-right: 30px;
+			margin-top: 25px;
+
+			&:hover {
+				color: $white;
+				background: $second-color;
+				border-color: $second-color;
+			}
+		}
+	
+		.btn-cta {
+			display: inline-block;
+			overflow: hidden;
+			clear: both;
+			margin-bottom: -15px;
+			margin-top: 25px;
+	
+			.icon { 
+				float: left;
+				overflow: hidden;
+				margin-right: 20px;
+				font-size: 60px;
+				color: $second-color;
+			}
+	
+			.content { 
+				overflow: hidden;
+				text-align: left;
+	
+				span { 
+	
+				}
+	
+				h3 { 
+	
+				}
+			}
+		}
+	}
+
+}
+
+.video-popup-wrapper {
+    height: 557px;
+
+	@media (max-width: 500px) {
+		height: 420px;
+	}
+
+    &.skill-video {
+        height: 490px;
+
+		@media (max-width: 500px) {
+			height: 400px;
+		}
+    }
+}

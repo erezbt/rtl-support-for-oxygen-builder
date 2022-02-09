@@ -1,0 +1,199 @@
+/* ------------------------------------------------------------------
+   Template Default Button, Input Styles - Value Change with Your's Need
+ -------------------------------------------------------------------- */
+.btnd {
+    line-height: 1;
+    font-weight: 700;
+    display: inline-block;
+    @include transition(.4s);
+    text-transform: uppercase;
+    font-size: 14px;   
+}
+
+.btn {
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+}
+
+.theme-btn {
+    color: $white;
+    @extend .btnd;    
+    padding: 25px 43px 21px;
+    background-color: $second-color;
+    transition: all .3s ease-in-out;
+
+    @media (max-width: 991px) {
+        padding: 16px 30px 14px;
+    }
+
+    &.theme-2 {
+        background: $theme-color-2;
+        padding: 22px 40px;
+
+        &:hover {
+            background: $second-color;
+        }
+
+        &.white {
+            background: $white;
+            box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.1);
+            color: $second-color;
+
+            &:hover {
+                background: $second-color;
+                color: $white;
+            }
+        }
+    }
+
+    
+    @media (max-width: 767px) {
+        padding: 14px 28px 12px;
+    }
+
+    @media (max-width: 580px) {
+        padding: 18px 35px 15px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 16px 30px 14px;
+        font-size: 15px;
+    }
+
+    i {
+        margin-left: 10px;
+    }
+
+    &.no-fil {
+        background: transparent;
+        margin-left: 15px;
+        color: #252525;
+        box-sizing: border-box;
+        border: 2px solid #e9e9e9;
+
+        @media (max-width: 500px) {
+            margin-left: 0;
+        }
+
+        &:hover {
+            background: $theme-color;
+            border-color: $theme-color;
+        }
+    }
+
+    &.black {
+        background: #191c28;
+        color: $white;
+
+        &:hover {
+            background: $theme-color;
+            color: #fff;            
+        }
+    }
+
+    &.minimal-btn {
+        color: $theme-color;
+        background: transparent;
+        box-shadow: inherit;
+        border: 1px solid $theme-color;
+
+        &:hover {
+            background: $theme-color;
+            box-shadow: inherit;
+            color: $white;
+        }
+    }
+
+    &:hover {
+        background: $theme-color;
+        color: $white;
+    }
+
+}
+
+.video-btn {
+    @extend .btnd;
+
+    i {
+        margin-right: 10px;
+    }
+}
+
+.video-play-btn {    
+
+    .play-video {        
+        border-radius: 50%;
+        width: 90px;
+        height: 90px;
+        background-color: $white;
+        color: $second-color;
+        line-height: 90px;
+        transition: .3s;
+        text-align: center;
+        animation: playVideo infinite 3.5s;
+        display: inline-block;
+        margin: 0px auto;
+        font-size: 20px;
+
+        @media (max-width: 767px) {
+            width: 60px;  
+            height: 60px;
+            line-height: 60px;
+            font-size: 14px;
+        }
+    
+        &:hover {
+            color: $theme-color;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        }
+    }
+
+    .play-text {
+        font-weight: 700;
+    }
+}
+
+.plus-text-btn {
+    display: inline-block;
+    overflow: hidden;
+    clear: both;
+    margin-top: 20px;
+
+    &:hover {
+        .icon {
+            background: $theme-color;
+            color: #fff;
+        }
+        color: $theme-color;
+    }
+    
+    .icon {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        color: #fff;
+        background: $second-color;
+        border-radius: 50px;
+        margin-right: 20px;
+        float: left;
+        overflow: auto;
+        transition: all .3s ease-in-out;
+    }
+
+    .link-text {
+        float: left;
+        overflow: auto;
+        padding-top: 3px;
+    }
+
+    span {
+        display: block;
+    }
+
+}

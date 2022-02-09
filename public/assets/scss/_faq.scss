@@ -1,0 +1,183 @@
+.faq-wrapper {
+    position: relative;
+
+    .faq-right-bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 40%;
+        height: 100%;
+        content: "";
+    }
+}
+
+.faq-accordion { 
+    .accordion { 
+        list-style-type: none;
+        counter-reset: css-counter 0;
+        padding: 30px;
+        background-color: #fff;
+        border-left: 1px solid #EBEDF2;
+        border-bottom: 1px solid #EBEDF2;
+
+        @media (max-width: 500px) {
+            padding: 30px 15px
+        }
+
+        &.no-border {
+            border: 0;
+            padding: 0;
+        }
+
+        .accordion-item { 
+            border: 0;
+            border-radius: 0;
+            counter-increment: css-counter 1;
+            position: relative;
+            z-index: 1;
+            padding-top: 20px;
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            &::before {
+                position: absolute;
+                left: 25px;
+                top: 0;
+                content: "";
+                border: 1px dashed #d4d4d5;
+                width: 1px;
+                height: 100%;
+                z-index: -1;
+                transform: translateX(-50%);
+            }
+
+            .accordion-header {
+                font-size: inherit;
+                line-height: inherit;
+                position: relative;
+                z-index: 1;
+
+                &:focus {
+                    outline: 0;
+                    border: 0;
+                }
+                
+                .accordion-button {
+                    padding-left: 70px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: $theme-color;
+                    overflow: hidden;
+
+                    @media (max-width: 500px) {
+                        padding: 0px;
+                        padding-left: 60px;
+                    }
+
+                    &:focus {
+                        outline: 0;
+                    }
+
+                    &:not(.collapsed) {
+                        color: $theme-color;
+                        background-color: transparent;
+                        box-shadow: none;
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+
+                    &::before {
+                        content: counter(css-counter);
+                        position: absolute;
+                        width: 50px;
+                        height: 50px;
+                        background: #fff;
+                        border: 1px solid #ebedf2;
+                        border-radius: 50px;
+                        color: $second-color;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 50px;
+                        text-align: center;
+                        left: 0;
+                    }
+
+                }
+            }
+
+            .accordion-collapse { 
+
+                .accordion-body { 
+                    padding-left: 70px;
+
+                    @media (max-width: 500px) {
+                        padding-left: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.faq-sidebar { 
+    background-color: $second-color;
+    padding: 30px 50px;
+
+	h3, p { 
+        color: #fff;
+	}
+
+	a { 
+        background-color: #fff;
+        padding: 18px 30px;
+        color: $theme-color;
+        text-transform: uppercase;
+        display: inline-block;
+        margin-top: 30px;
+        line-height: 1;
+
+		i {
+            font-size: 20px;
+            margin-right: 10px;
+        }
+	}
+}
+
+.faq-wrapper {
+    position: relative;
+}
+
+.box-cta-call { 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    padding: 30px;
+
+	.icon { 
+        font-size: 54px;
+        color: $second-color;
+        line-height: 1;
+        margin-right: 15px;
+	}
+
+	.content-text { 
+
+		span { 
+
+		}
+
+		h3 { 
+            margin-bottom: 0;
+		}
+	}
+}
+
+.faq-bg {
+    background-color: #f7f7ff;
+}
+

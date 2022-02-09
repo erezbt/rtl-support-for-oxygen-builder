@@ -1,0 +1,23 @@
+.our-brand-wrapper {
+    background-color: #f7f7ff;
+}
+
+.brand-carousel-wrapper {
+
+    &.dot-bg {
+        background-image: radial-gradient(#E6E6E6 1px, transparent 0);
+        background-size: 15px 15px;
+        background-position: -17px ​-22px;
+    }
+        
+    position: relative;
+}
+
+.brand-carousel-wrapper-2 {
+    background-color: $theme-color;
+
+    img {
+        filter: brightness(2);
+    }
+}
+

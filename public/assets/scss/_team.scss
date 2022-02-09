@@ -1,0 +1,353 @@
+.single-team-member {
+    position: relative;
+    margin-top: 40px;
+
+    &:hover {
+
+        .team-img { 
+            
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        .team-details-bar {
+
+            &::after { 
+                opacity: 1;
+                visibility: visible;
+                width: 100%;
+                left: 0;
+                right: auto;
+            }
+
+            .member-details {
+                .member-data { 
+                    opacity: 0;
+                    visibility: visible;
+                    margin-top: -45px;
+                }
+
+                .social-profile {
+                    opacity: 1;
+                    visibility: visible;
+                    z-index: 1;
+                }
+            }
+
+        }
+    }
+
+
+	.team-img { 
+        height: 440px;
+        background-color: #e8ecf8;
+        overflow: hidden;
+        text-align: center;
+
+        @media (max-width: 991px) {
+            height: 340px;
+        }
+
+        img {
+            transition: all .4s ease-in-out;
+        }
+	}
+
+	.team-details-bar {
+        height: 90px;
+        width: 90%;
+        margin: 0 auto;
+        background: #fff;
+        margin-top: -50px;
+        position: relative;
+        overflow: hidden;
+        clear: both;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+        &::after {
+            position: absolute;
+            width: 0%;
+            height: 1px;
+            background-color: $second-color;
+            content: "";
+            right: 0;
+            bottom: 0;
+            opacity: 1;
+            visibility: hidden;
+            transition: all .4s ease-in-out;
+        }
+
+		.member-details {
+            overflow: hidden;
+            height: 60px;
+
+			.member-data {
+                transition: all .4s ease-in-out;
+
+				span { 
+                    font-size: 14px;
+				}
+
+				h3 { 
+                    margin-bottom: 0;
+				}
+			}
+
+			.social-profile {
+                opacity: 0;
+                visibility: visible;
+                transition: all .4s ease-in-out;
+
+				a { 
+                    font-size: 20px;
+                    margin: 0 12px;
+                    color: $theme-color;
+
+                    &:hover {
+                        color: $second-color;
+                    }
+				}
+			}
+		}
+
+		.plus-btn {
+            border: 1px solid $second-color;
+            color: $second-color;
+            font-size: 20px;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            text-align: center;
+            box-sizing: border-box;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: #fff;
+                background-color: $second-color;
+            }
+		}
+	}
+}
+
+
+.team-member-details-wrapper {
+    background: #F9FAFE;
+    
+    .container {
+        margin-top: -80px;
+        z-index: 3;
+        position: relative;
+        
+        @media (max-width: 991px) {
+            margin-top: 0px;
+            padding-top: 100px;
+        }
+        @media (max-width: 767px) {
+            padding-top: 80px;
+        }
+    }
+
+    .icon-box {
+        margin-top: 30px;
+        background-color: #fff;
+        padding: 85px 30px;
+
+        @media (max-width: 576px) {
+            padding: 50px 20px;
+        }
+
+        .icon {
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 0;
+
+            @media (max-width: 576px) {
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.contact-form7-wrapper {
+    margin-top: 30px;
+
+    .contact-form {
+        padding: 50px 30px;
+    }
+}
+
+.biography-info {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+
+    p {
+         margin-bottom: 30px;
+    }
+
+    .single-bio-data {
+        width: 50%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        text-transform: capitalize;
+        margin-top: 5px;
+
+        @media (max-width: 767px) {
+           width: 80%;
+        }
+
+        .key-data {
+            font-weight: 500;
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: ":";
+                right: 10px;
+            }
+        }
+    }
+}
+
+.member-profile-wrapper {
+    background-color: #fff;
+
+    .member-profile-img {
+        height: 340px;
+        background-position: top;
+
+        @media (max-width: 767px) {
+            height: 300px;
+        }
+
+        @media (max-width: 585px) {
+            height: 280px;
+        }
+    }
+
+    .member-info { 
+        max-width: 500px;
+        position: relative;
+        padding-bottom: 15px;
+
+        @media (max-width: 1100px) {
+            max-width: 400px;
+        }
+
+        @media (max-width: 991px) {
+            max-width: 320px;
+        }
+
+        @media (max-width: 767px) {
+            max-width: 450px;
+            margin: 0;
+        }
+
+        @media (max-width: 576px) {
+            display: block;
+            max-width: 100%;
+        }
+
+        @media (min-width: 1440px) {
+            &::before {
+                position: absolute;
+                content: "";
+                right: -8%;
+                top: 0;
+                height: 100%;
+                width: 1px;
+                background: #EBEDF2;
+            }                
+        }
+
+        @media (max-width: 767px) {
+            padding: 30px;
+        }
+
+        h2 { 
+            font-size: 36px;
+            margin-bottom: 5px;
+
+            @media (max-width: 991px) {
+                font-size: 30px;
+            }
+
+            @media (max-width: 576px) {
+                font-size: 26px;
+            }
+        }
+    
+        p { 
+            margin-top: 30px;
+
+            @media (max-width: 767px) {
+                margin-top: 20px;
+            }
+
+            @media (max-width: 576px) {
+                margin-top: 10px;
+            }
+        }
+    
+        .social-profiles { 
+            margin-top: 20px;
+
+            a { 
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                border: 1px solid #EBEDF2;
+                margin-right: 10px;
+                display: inline-block;
+                margin-top: 10px;
+            }
+        }
+    } 
+
+    .member-contact-info {
+        margin-right: 50px;
+
+        @media (max-width: 767px) {
+            padding: 30px 20px;
+            margin: 0;
+        }
+
+        @media (max-width: 576px) {
+            display: block;
+            width: 100%;
+            padding: 0 15px;
+            padding-bottom: 50px;
+        }
+
+        @media (max-width: 1100px) {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .single-contact {
+            margin-top: 15px;
+        }
+
+        h6 {
+            margin-bottom: 5px;
+        }
+    }
+
+
+}
+
+.skill-bars {
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 30px;
+    padding-bottom: 70px;
+}
